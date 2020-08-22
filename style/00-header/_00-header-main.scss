@@ -1,5 +1,6 @@
 @import "./01-header-left";
 @import "./02-header-right";
+@import "./03-header-navbar";
 #header {
   position: relative;
   height: auto;
@@ -26,5 +27,23 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #header {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    padding-top: 100px;
+  }
+  .header-social {
+    bottom: 0;
+    top: unset;
+    left: unset;
+    transform: unset;
+    transform: unset;
+    background: blue;
+    width: 100%;
+    text-align: center;
   }
 }

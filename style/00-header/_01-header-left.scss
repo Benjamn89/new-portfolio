@@ -29,3 +29,20 @@
   line-height: 1.4;
   padding-right: 150px;
 }
+
+@media only screen and (max-width: 1000px) {
+  .header-left {
+    align-items: center;
+    padding-left: unset;
+    padding: 0 50px;
+    margin-bottom: 100px;
+    & > h1 {
+      width: 100%;
+    }
+  }
+  .header-left-p {
+    max-width: unset;
+    padding-right: unset;
+    margin-bottom: 50px;
+  }
+}
